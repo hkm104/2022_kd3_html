@@ -1,11 +1,35 @@
 <body>
     <form action="https://www.ppomppu.co.kr/zboard/zboard.php?id=market&divpage=3183">
+        <input type="checkbox" id="t1" name="time" value="0800"> 
+        <label for="t1">08:00</label> 
+
+        <input type="checkbox" id="t2" name="time" value="1200"> 
+        <label for="t2">12:00</label>        
+        <hr>
+        <input type="radio" id="j1" name="job" value="developer"> 
+        <label for="j1">개발자</label>
+        <input type="radio" id="j2" name="job" value="designer"> 
+        <label for="j2">디자이너</label>
+
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" value="John">
         <br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" value="Doe">
-        <br><br>
+        <br>
+        <input type="text" name="user_id"
+            pattern="[A-Za-z]+[A-Za-z0-9]*"
+            required
+            placeholder="영어와 숫자로 아이디를 작성해주세요.(단 첫글자는 영어로)">
+        <br>
+        <button type="button"
+            onclick="alert('hello')">
+            Click
+        </button>
+        <button type="button"
+            onclick="print()">
+            Click
+        </button>
         <input type="submit" value="Submit">
     </form>
 </body>
